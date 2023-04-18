@@ -41,8 +41,8 @@ public class CursoServiceImpl implements ICursoService{
     }
 
     @Override
-    public Curso findById(Long id) {
-        return (Curso)cursoDao.findById(id).get();
+    public Curso findById(Long id_curso) {
+        return (Curso) cursoDao.findById(id_curso).get();
 
     }
 

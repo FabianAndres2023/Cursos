@@ -9,6 +9,5 @@ public interface ICursoService {
     void delete(Curso curso);
     Curso update(Curso curso);
     List<Curso> findAll();
-    Curso findById(Long id);
-
+    Curso findById(Long id_curso);
 }

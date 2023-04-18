@@ -19,13 +19,13 @@ public class CursoRestController {
 
     /**
      * Endpoint para recibir un saludo
-     * @param nombre Es el nombre que envian desde la url
+     * @param nombre_curso Es el nombre que envian desde la url
      * @return Un saludo
      */
 
-    @GetMapping("/hola/{nombre}")
-    public String holaMundo(@PathVariable("nombre") String nombre){
-        return "Hola "+ nombre;
+    @GetMapping("/hola/{nombre_curso}")
+    public String holaMundo(@PathVariable("nombre_curso") String nombre_curso){
+        return "Hola "+ nombre_curso;
     }
 
     @GetMapping("/cursos")
@@ -34,9 +34,9 @@ public class CursoRestController {
         return  cursoService.findAll();
     }
 
-    @GetMapping("/cursos/{id}")
-    public Curso buscarCurso(@PathVariable("id") long id  ){
-        return cursoService.findById(id);
+    @GetMapping("/cursos/{id_curso}")
+    public Curso buscarCursoPorId(@PathVariable("id_curso") long id_curso  ){
+        return cursoService.findById(id_curso);
 
     }
 
@@ -46,10 +46,10 @@ public class CursoRestController {
 
     }
 
-    @DeleteMapping("/cursos/{id}")
-    public void borrarCurso(@PathVariable("id") long id ) {
+    @DeleteMapping("/cursos/{id_curso}")
+    public void borrarCurso(@PathVariable("id_curso") long id_curso ) {
         Curso curso;
-        curso = cursoService.findById(id); // Busca Curso
+        curso = cursoService.findById(id_curso); // Busca Curso
         cursoService.delete(curso);
 
     }
