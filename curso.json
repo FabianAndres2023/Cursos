@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "nombre": "Primer Semestre"
+    },
+    {
+        "id": 2,
+        "nombre": "Segundo Semestre"
+    },
+    {
+        "id": 3,
+        "nombre": "Tercer Semestre"
+    },
+    {
+        "id": 4,
+        "nombre": "Cuarto Semestre"
+    },
+    {
+        "id": 5,
+        "nombre": "Quinto Semestre"
+    },
+    {
+        "id": 6,
+        "nombre": "Sexto Semestre"
+    },
+    {
+        "id": 7,
+        "nombre": "Septimo Semestre"
+    },
+    {
+        "id": 8,
+        "nombre": "Octavo Semestre"
+    },
+    {
+        "id": 9,
+        "nombre": "Noveno Semestre"
+    },
+    {
+        "id": 10,
+        "nombre": "Decimo Semestre"
+    }
+]
